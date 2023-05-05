@@ -1,1 +1,1 @@
-# GWAS-workflow
+# GWAS-Workflow
