@@ -13,5 +13,9 @@ Performing a genome-wide association can be a laborious task. In this reporsitor
 - [BCFtools](https://samtools.github.io/bcftools/)
 - [GATK-HaplotypeCaller](https://gatk.broadinstitute.org/hc/en-us/articles/360036194592-Getting-started-with-GATK4)
 - [Freebayes](https://github.com/freebayes/freebayes)
-- R program
+- [R program](https://cran.r-project.org/) and [RStudio Desktop](https://posit.co/download/rstudio-desktop/)
+
+## Reference
+
+
 ## That's it.... Good luck!
