@@ -14,7 +14,12 @@ In this reporsitory, we describe the **pipeline** that we have adapted to carry 
 - [BCFtools](https://samtools.github.io/bcftools/)
 - [GATK-HaplotypeCaller](https://gatk.broadinstitute.org/hc/en-us/articles/360036194592-Getting-started-with-GATK4)
 - [Freebayes](https://github.com/freebayes/freebayes)
-- [R program](https://cran.r-project.org/) and [RStudio Desktop](https://posit.co/download/rstudio-desktop/)
+- [Plink](https://www.cog-genomics.org/plink/)
+- [R program](https://cran.r-project.org/) and [RStudio Desktop](https://posit.co/download/rstudio-desktop/):
+  - ggplot
+  - GAPIT
+  - CMplot
+  - 
 
 ## Reference
 
