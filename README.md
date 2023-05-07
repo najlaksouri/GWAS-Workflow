@@ -8,7 +8,7 @@ Underneath this README, we illustrate the different steps needed to run the anal
 <br />
 
 <p align="center">
-  <img width="600" height="600" src="https://github.com/najlaksouri/GWAS-Workflow/blob/main/Images/Pipeline.png">
+  <img width="500" height="500" src="https://github.com/najlaksouri/GWAS-Workflow/blob/main/Images/Pipeline.png">
 </p>
 
 ## Prerequisites
@@ -25,13 +25,22 @@ Underneath this README, we illustrate the different steps needed to run the anal
   - CMplot
 
 ## Content
+**1. ddRAD-Sequencing**
+**2. Data processing**
 
-1. ddRAD-Sequencing
-2. Data processing
-    - De-multiplexing
-    - QC filtering
-  - 
-3. 
+  - De-multiplexing
+  - QC filtering 
+**3. SNP calling and filtering**
+    - BCFtools calling
+    - GATK calling
+    - Freebayes calling
+    - Intersection
+    - Imputation 
+ **4. GWAS analysis**
+   - Phenotypic data assessement
+   - Population Structure
+   - Relatedness
+   - Statistical model assessment
 
 ## Reference
 
