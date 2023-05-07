@@ -25,18 +25,17 @@ Underneath this README, we illustrate the different steps needed to run the anal
   - CMplot
 
 ## Content
-**1. ddRAD-Sequencing**
-**2. Data processing**
-
-  - De-multiplexing
-  - QC filtering 
-**3. SNP calling and filtering**
+1. ddRAD-Sequencing
+2. Data processing
+    - De-multiplexing
+    - QC filtering 
+3. SNP calling and filtering
     - BCFtools calling
     - GATK calling
     - Freebayes calling
     - Intersection
     - Imputation 
- **4. GWAS analysis**
+4. GWAS analysis
    - Phenotypic data assessement
    - Population Structure
    - Relatedness
