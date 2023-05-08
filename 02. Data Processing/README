@@ -1,3 +1,3 @@
 In this folder, we provide 3 differents scripts. 
 These scripts take RAW ddRAD-seq reads as input to produce compressed binary version of SAM files (BAM format), containing the alignment information of various sequences mapped against 
-*** Prunus persica *** genome 
+**Prunus persica** genome
