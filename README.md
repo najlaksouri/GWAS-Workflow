@@ -26,7 +26,7 @@ Underneath this README, we illustrate the different steps needed to run the anal
 
 ## Content
 1. ddRAD-Sequencing
-2. Data processing
+2. [Data processing](https://github.com/najlaksouri/GWAS-Workflow/tree/main/02.%20Data%20Processing)
     - De-multiplexing
     - QC filtering 
 3. SNP calling and filtering
