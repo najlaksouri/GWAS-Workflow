@@ -30,8 +30,8 @@ Underneath this README, we illustrate the different steps needed to run the anal
     - De-multiplexing: ------------------------> [stacks.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/Stacks.sh)
     - QC filtering: ------------------------> [Trimmomatic.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/Trimmomatic.sh)
     - Remove duplicated reads ------------------------> [dedup.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/dedup.sh)
-    - Read mapping: ------------------------> [bwa.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/bwa.mk)
-3. SNP calling and filtering
+    - Reads mapping: ------------------------> [align_bwa.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/align_bwa.mk)
+3. Variant calling and filtering
     - BCFtools calling
     - GATK calling
     - Freebayes calling
