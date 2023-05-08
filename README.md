@@ -26,9 +26,9 @@ Underneath this README, we illustrate the different steps needed to run the anal
 
 ## Content
 1. ddRAD-Sequencing
-2. Data processing
-    - De-multiplexing: see [stacks.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/Stacks.sh)
-    - QC filtering 
+2. [Data processing](https://github.com/najlaksouri/GWAS-Workflow/tree/main/02.%20Data%20Processing)
+    - De-multiplexing: ------------------------> [stacks.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/Stacks.sh)
+    - QC filtering: ------------------------> [stacks.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/Trimmomatic.sh)
 3. SNP calling and filtering
     - BCFtools calling
     - GATK calling
