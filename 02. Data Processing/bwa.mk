@@ -28,7 +28,7 @@ download:
 #############################################
 #         reminder, wget                  ###
 # -P: indicate the output directory       ###
-# 							    		                  ###
+# 					  ###
 #############################################
 
 
@@ -55,21 +55,21 @@ DECLONED=/ddRAD-seq/05.Clone_filter/decloned_reads
 p1=08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29
 
 
-##################################################################
-#						reminder, bwa-mem						                         #
-#																                                 #
-# -M and -R are needed for GATK compatibility					           #
-# -M: if a read is splitted (different parts maps to different	 #
-# places marks all parts other than main as secondary  			     #
-# alignment then GATK which ignores secondary alignment).		     #
-# -R; add a read groupe RG and sample name tag SM.				       #
-# BWA MEM command to define the Read Group: 					           #
-# -R '@RG\tID:.....\tSM:......\tLB:......\tPL:......'			       #
-# ID:unique id of a collection of reads, SM:Sample name; 		     #
-# LB:library name; PL: sequencing platform						           #
-# the most important components are ID,SM AND LB 				         #
-# Exple: @RG ID:flowcell1.lane1	PL: ILLUMINA  LB:pool1 	SAM:dad  #
-#																                                 #
+#################################################################
+#		reminder, bwa-mem			        #
+#								#
+# -M and -R are needed for GATK compatibility			#
+# -M: if a read is splitted (different parts maps to different	#
+# regions, marks all parts other than main as secondary		#
+# alignment then GATK which ignores secondary alignment).	#
+# -R; add a read groupe RG and sample name tag SM.		#
+# BWA MEM command to define the Read Group:			#
+# -R '@RG\tID:.....\tSM:......\tLB:......\tPL:......'		#
+# ID:unique id of a collection of reads, SM:Sample name;	#
+# LB:library name; PL: sequencing platform			#
+# the most important components are ID,SM AND LB 		#
+# Exple: @RG ID:flowcell1.lane1	PL: ILLUMINA  LB:pool1 	SAM:dad #
+#								#
 #################################################################
 
 .PHONY: reads $(p1)
