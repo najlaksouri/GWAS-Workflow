@@ -13,8 +13,8 @@ MAKE=make -s -f ${MAKEFILE}
 #------------------------------ 1. download and index genome ------------------------------
 
 # Download the reference genome from NCBI
-MAPPING_HOME=/media/sie/TOSHIBA_EXT/Najla/ddRAD-seq/06.Mapping_BWA
-GENOME_HOME=/media/sie/TOSHIBA_EXT/Najla/ddRAD-seq/06.Mapping_BWA/ref_genome/
+MAPPING_HOME=/ddRAD-seq/06.Mapping_BWA
+GENOME_HOME=/ddRAD-seq/06.Mapping_BWA/ref_genome/
 
 
 download:
@@ -33,8 +33,8 @@ download:
 
 
 # indexing the reference genome
-GENOME_FILE_GZ=/media/sie/TOSHIBA_EXT/Najla/ddRAD-seq/06.Mapping_BWA/ref_genome/GCF_000346465.2_Prunus_persica_NCBIv2_genomic.fna.gz 
-GENOME_FILE=/media/sie/TOSHIBA_EXT/Najla/ddRAD-seq/06.Mapping_BWA/ref_genome/GCF_000346465.2_Prunus_persica_NCBIv2_genomic.fna
+GENOME_FILE_GZ=//ddRAD-seq/06.Mapping_BWA/ref_genome/GCF_000346465.2_Prunus_persica_NCBIv2_genomic.fna.gz 
+GENOME_FILE=/ddRAD-seq/06.Mapping_BWA/ref_genome/GCF_000346465.2_Prunus_persica_NCBIv2_genomic.fna
 index:
 	@echo "indexing the genome"
 	@echo
@@ -78,3 +78,69 @@ $(p1):
 	echo "mapping the pair-reads sample_$@_R1 and sample_$@_R2"
 	bwa mem -t 8 -M -R "@RG\tID:sar_$@\tSM:sample_$@\tLB:pool1\tPL:ILLUMINA" ${GENOME_FILE} ${DECLONED}/sample_$@_R1_paired.1.fq.gz ${DECLONED}/sample_$@_R2_paired.2.fq.gz \
 	2> ${MAPPING_HOME}/bwa.err.pool1 > ${MAPPING_HOME}/sample_$@.sam
+	
+
+#------------------------------ 3. post alignement analysis ------------------------------
+
+#################################################################
+#		reminder, samtools			        #
+#								#
+# Aligners can sometimes leave unusual SAM flag information:	#
+# PS: To ensure that PE reads contain the correct information	#
+# of the mate read, we are going to use "samtools fixmate".	#
+# however this function requires name sorted files, so first we	#
+# will sort SAM files by their name using "samtools sort -n ",	#
+# then fix and convert using "samtools fixmate"			#
+# -m: Add ms (mate score) tags. These are used by markdup	#
+# ID:unique id of a collection of reads, SM:Sample name;	#
+# to select the best reads to keep				#
+#								#
+#################################################################
+
+
+
+BAM_HOME=/ddRAD-seq/07.Post_alignment/bam_files
+SRT_BY_NAME=/ddRAD-seq/07.Post_alignment/srt_name/ #will be removed
+FIXMATE=/ddRAD-seq/07.Post_alignment/fixmate
+SRT_BY_COORD=/ddRAD-seq/07.Post_alignment/srt_coord #sorted by coordinate
+
+
+samples=08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29
+
+
+# A- convert SAM to BAM format
+
+.PHONY: motifs $(samples)
+convert_to_bam: $(samples)
+$(samples):
+	mkdir -p ${BAM_HOME}
+	echo "convert to bam sample_$@"
+	samtools view -@4 -S -b ${MAPPING_HOME}/sample_$@.sam > ${BAM_HOME}/sample_$@.bam
+
+
+# B- fixmate and sort by name
+
+fixmate:
+	mkdir -p ${SRT_BY_NAME}
+	mkdir -p ${FIXMATE}
+	for i in ${samples}; \
+	do \
+		echo "fixmate sample$${i}"; \
+		samtools sort -@4 -n ${BAM_HOME}/sample_$${i}.bam \
+    		-o ${SRT_BY_NAME}/sample_$${i}.srt_name.bam;\
+		samtools fixmate -@4 -m -O bam ${SRT_BY_NAME}/sample_$${i}.srt_name.bam \
+    		${FIXMATE}/sample_$${i}_fixmate.bam;\
+	done
+
+
+# C- sort by coordinates
+
+srt_by_coord:
+	mkdir -p ${SRT_BY_COORD}
+	for i in ${samples}; \
+	do \
+		echo "sort by coordinate sample$${i}";\
+		samtools sort -@6 ${FIXMATE}/sample_$${i}_fixmate.bam \
+		-o ${SRT_BY_COORD}/sample_$${i}.fix_srt.bam;\
+	done
+
