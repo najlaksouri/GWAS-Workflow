@@ -29,6 +29,7 @@ Underneath this README, we illustrate the different steps needed to run the anal
 2. [Data processing](https://github.com/najlaksouri/GWAS-Workflow/tree/main/02.%20Data%20Processing)
     - De-multiplexing: ------------------------> [stacks.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/Stacks.sh)
     - QC filtering: ------------------------> [stacks.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/Trimmomatic.sh)
+    - Read mapping: ------------------------> [bwa.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/bwa.mk)
 3. SNP calling and filtering
     - BCFtools calling
     - GATK calling
@@ -40,6 +41,7 @@ Underneath this README, we illustrate the different steps needed to run the anal
    - Population Structure
    - Relatedness
    - Statistical model assessment
+   
 
 ## Reference
 
