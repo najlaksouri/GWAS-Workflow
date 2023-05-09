@@ -31,7 +31,7 @@ Underneath this README, we illustrate the different steps needed to run the anal
     - QC filtering: ------------------------> [Trimmomatic.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/Trimmomatic.sh)
     - Remove duplicated reads ------------------------> [dedup.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/dedup.sh)
     - Reads mapping: ------------------------> [align_bwa.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/align_bwa.mk)
-3. Variant calling and filtering
+3. [Variant calling and filtering](https://github.com/najlaksouri/GWAS-Workflow/tree/main/03.%20SNP%20calling%20and%20filtering)
     - BCFtools calling
     - GATK calling
     - Freebayes calling
