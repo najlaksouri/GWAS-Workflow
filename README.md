@@ -25,7 +25,7 @@ Underneath this README, we illustrate the different steps needed to run the anal
   - CMplot
 
 ## Content
-1. ddRAD-Sequencing
+1. [ddRAD-Sequencing](https://github.com/najlaksouri/GWAS-Workflow/tree/main/01.ddRAD-sequencing)
 2. [Data processing](https://github.com/najlaksouri/GWAS-Workflow/tree/main/02.%20Data%20Processing)
     - De-multiplexing: ------------------------> [stacks.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/Stacks.sh)
     - QC filtering: ------------------------> [Trimmomatic.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/Trimmomatic.sh)
