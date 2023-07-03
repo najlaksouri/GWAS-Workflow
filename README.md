@@ -32,9 +32,9 @@ Underneath this README, we illustrate the different steps needed to run the anal
     - Remove duplicated reads ------------------------> [dedup.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/dedup.sh)
     - Reads mapping: ------------------------> [align_bwa.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/align_bwa.mk)
 3. [Variant calling and filtering](https://github.com/najlaksouri/GWAS-Workflow/tree/main/03.%20SNP%20calling%20and%20filtering)
-    - BCFtools calling
-    - GATK calling
-    - Freebayes calling
+    - BCFtools calling: ------------------------> [bcftoolsCall.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/bcftoolsCall.mk)
+    - GATK calling: ------------------------> [freebayes.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/freebayes.mk)
+    - Freebayes calling: ------------------------> [gatkCall.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/gatkCall.mk)
     - Intersection
     - Imputation 
 4. GWAS analysis
