@@ -6,15 +6,15 @@
 ######################################################################
 
 
-MAKEFILE=/ddRADseq/scripts/bwa.mk
+MAKEFILE=~/ddRADseq/scripts/bwa.mk
 MAKE=make -s -f ${MAKEFILE}
 
 
 #------------------------------ 1. download and index genome ------------------------------
 
 # Download the reference genome from NCBI
-MAPPING_HOME=/ddRAD-seq/06.Mapping_BWA
-GENOME_HOME=/ddRAD-seq/06.Mapping_BWA/ref_genome/
+MAPPING_HOME=~/ddRAD-seq/06.Mapping_BWA
+GENOME_HOME=~/ddRAD-seq/06.Mapping_BWA/ref_genome/
 
 
 download:
@@ -33,8 +33,8 @@ download:
 
 
 # indexing the reference genome
-GENOME_FILE_GZ=//ddRAD-seq/06.Mapping_BWA/ref_genome/GCF_000346465.2_Prunus_persica_NCBIv2_genomic.fna.gz 
-GENOME_FILE=/ddRAD-seq/06.Mapping_BWA/ref_genome/GCF_000346465.2_Prunus_persica_NCBIv2_genomic.fna
+GENOME_FILE_GZ=~/ddRAD-seq/06.Mapping_BWA/ref_genome/GCF_000346465.2_Prunus_persica_NCBIv2_genomic.fna.gz 
+GENOME_FILE=~/ddRAD-seq/06.Mapping_BWA/ref_genome/GCF_000346465.2_Prunus_persica_NCBIv2_genomic.fna
 index:
 	@echo "indexing the genome"
 	@echo
@@ -99,10 +99,10 @@ $(p1):
 
 
 
-BAM_HOME=/ddRAD-seq/07.Post_alignment/bam_files
-SRT_BY_NAME=/ddRAD-seq/07.Post_alignment/srt_name/ #will be removed
-FIXMATE=/ddRAD-seq/07.Post_alignment/fixmate
-SRT_BY_COORD=/ddRAD-seq/07.Post_alignment/srt_coord #sorted by coordinate
+BAM_HOME=~/ddRAD-seq/07.Post_alignment/bam_files
+SRT_BY_NAME=~/ddRAD-seq/07.Post_alignment/srt_name/ #will be removed
+FIXMATE=~/ddRAD-seq/07.Post_alignment/fixmate
+SRT_BY_COORD=~/ddRAD-seq/07.Post_alignment/srt_coord #sorted by coordinate
 
 
 samples=08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29
