@@ -18,7 +18,7 @@ Ligated fragments from 24 samples were subsequently pooled together and were PCR
 
 
 
-**Ps**
+**Ps**:
 Raw sequence reads were submitted to the **European Nucleotide Archive (ENA)** under the project reference **PRJEB62784**.
 </div>
 
