@@ -26,7 +26,7 @@ Raw sequence reads were submitted to the **European Nucleotide Archive (ENA)** u
 ## Citations 
 
 - Aballay, M.M., Aguirre, N.C., Filippi, C.V. et al. Fine-tuning the performance of ddRAD-seq in the peach genome. Sci Rep 11, 6298 (2021). https://doi.org/10.1038/s41598-021-85815-0
-- Aguirre, N.C.; Filippi, C.V.; Zaina, G.; Rivas, J.G.; Acuña, C.V.; Villalba, P.V.; García, M.N.; González, S.; Rivarola, M.; Martínez, M.C.; et al. Optimizing ddRADseq in Non-Model Species: A Case Study in Eucalyptus dunnii Maiden. Agronomy 2019, 9, 484. https://doi.org/10.3390/agronomy9090484
+- Aguirre, N.C., Filippi, C.V., Zaina, G., Rivas, J.G., Acuña, C.V., Villalba, P.V., García, M.N., González, S., Rivarola, M., Martínez, M.C., et al. Optimizing ddRADseq in Non-Model Species: A Case Study in Eucalyptus dunnii Maiden. Agronomy 2019, 9, 484. https://doi.org/10.3390/agronomy9090484
 
 
 
