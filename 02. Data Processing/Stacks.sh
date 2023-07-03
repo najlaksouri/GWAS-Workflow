@@ -9,10 +9,10 @@
 
 #Declare the variables:
 
-OUTDIR_POOL1=/ddRAD-seq/03.Stacks_demultiplexing/pool1/
-POOL1_R1=/ddRAD-seq/00.Raw_reads/sar08a29-2020Mel_P1_p1_S1_R1_001.fastq.gz
-POOL1_R2=/ddRAD-seq/00.Raw_reads/sar08a29-2020Mel_P1_p1_S1_R2_001.fastq.gz
-barcode_pool1=/ddRAD-seq/03.Stacks_demultiplexing/Barcodes/barcode_pool1.txt
+OUTDIR_POOL1=~/ddRAD-seq/03.Stacks_demultiplexing/pool1/
+POOL1_R1=~/ddRAD-seq/00.Raw_reads/sar08a29-2020Mel_P1_p1_S1_R1_001.fastq.gz
+POOL1_R2=~/ddRAD-seq/00.Raw_reads/sar08a29-2020Mel_P1_p1_S1_R2_001.fastq.gz
+barcode_pool1=~/ddRAD-seq/03.Stacks_demultiplexing/Barcodes/barcode_pool1.txt
 
 ##################################################################################################################################
 # The enzyme pair PstI/MboI was selected as it generated the highest number of loci in concordance with the in silico analysis
