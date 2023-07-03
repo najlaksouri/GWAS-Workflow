@@ -3,16 +3,16 @@
 
 # define the variables and input files
 
-TRIMMOMATIC_HOME=/home/sie/softwares/Trimmomatic-0.39
+TRIMMOMATIC_HOME=~/Trimmomatic-0.39
 
-############################################################################################################################
-				                                                Get started with pool1    
+##############################################################################
+			Get started with pool1    
                                                         
                                                         
-#POOL1_HOME=/ddRAD-seq/03.Stacks_demultiplexing/pool1
-#POOL1_OUT_P=/ddRAD-seq/04.Trimmed_out/pool1/paired
-#POOL1_OUT_U=/ddRAD-seq/04.Trimmed_out/pool1/unpaired
-############################################################################################################################
+#POOL1_HOME=~/ddRAD-seq/03.Stacks_demultiplexing/pool1
+#POOL1_OUT_P=~/ddRAD-seq/04.Trimmed_out/pool1/paired
+#POOL1_OUT_U=~/ddRAD-seq/04.Trimmed_out/pool1/unpaired
+###############################################################################
 
 
 
