@@ -35,8 +35,8 @@ Step 2. [Data processing](https://github.com/najlaksouri/GWAS-Workflow/tree/main
     
 Step 3. [Variant calling and filtering](https://github.com/najlaksouri/GWAS-Workflow/tree/main/03.%20SNP%20calling%20and%20filtering) 
 - BCFtools calling: ------------------------> [bcftoolsCall.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/bcftoolsCall.mk)
-- GATK calling: ------------------------> [freebayesCall.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/freebayesCall.mk)
-- Freebayes calling: ------------------------> [gatkCall.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/gatkCall.mk)
+- Freebayes calling: ------------------------> [freebayesCall.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/freebayesCall.mk)
+- GATK calling: ------------------------> [gatkCall.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/gatkCall.mk)
 - Intersection
 - Imputation 
     
