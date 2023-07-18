@@ -17,12 +17,12 @@ GATK_HOME=~/softwares/gatk-4.2.3.0
 #---------------------------------------- 1. Index the genome--------------------------------
 
 #################################################################################	
-#									      remainder, index 							                          #
-#																				                                        #
-#																				                                        #
-# To index the genome, we will need to files (.fai) obtained					          #
-# from "samtools faidx" and (.dict) form "picard, CreateSequenceDisctionnary"	  #
-#																				                                        #
+#			remainder, index 					#
+#										#
+#										#
+# To index the genome, we will need to files (.fai) obtained			#
+# from "samtools faidx" and (.dict) form "picard, CreateSequenceDisctionnary"	#
+#										#
 #################################################################################
 
 
