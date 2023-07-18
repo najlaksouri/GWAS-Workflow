@@ -33,11 +33,11 @@ create_dir:
 
 
 #################################################################################
-#				                    reminder freebayes 									                #
-# 																				                                      #  
-# -min-mapping-quality 40, exlude alignment from analysis if they have a 		    #
-# mapping quality less than Q, in my case min mapping quality is set at 40		  #
-#																				                                        #
+#				  reminder freebayes				#
+# 										#  
+# -min-mapping-quality 40, exlude alignment from analysis if they have a 	#
+# mapping quality less than Q, in my case min mapping quality is set at 40	#
+#										#
 #################################################################################
 
 
@@ -66,21 +66,21 @@ freebayes_merge:
 
 
 #################################################################################
-#				                            reminder          											    #
-# 																				                                      #		
+#				reminder          				#
+# 										#		
 #  After merging the individual vcf files into a multisample vcf. I have faced  #
 # the problem of having a lot of missing called gentoyped, but it was           #
-# impossible to know if these missing data are actually missing calls or 		    #
-# ref homozygote genotype.														                          #
-#																				                                        #
-# to fix this issue i have used the java package:							                  #
-# http://lindenb.github.io/jvarkit/FixVcfMissingGenotypes.html					        #
-# this program read a VCF, look back at some BAMS to tells if the missing 		  #
-# genotypes were homozygotes-ref or not-called. 								                #
+# impossible to know if these missing data are actually missing calls or 	#
+# ref homozygote genotype.							#
+#										#
+# to fix this issue i have used the java package:				#
+# http://lindenb.github.io/jvarkit/FixVcfMissingGenotypes.html			#
+# this program read a VCF, look back at some BAMS to tells if the missing 	#
+# genotypes were homozygotes-ref or not-called. 				#
 # If the number of reads is greater than min.depth, then a missing genotype is 	#
-# said hom-ref. Herein min.depth was set to 5 									                #
-# -B: imput.list is txt file containing paths to the bam files					        #
-# -f Update all fields like DP even if the Genotype is called					          #
+# said hom-ref. Herein min.depth was set to 5 					#
+# -B: imput.list is txt file containing paths to the bam files			#
+# -f Update all fields like DP even if the Genotype is called			#
 #################################################################################
 
 FixVcfMissingGenotypes_dir=~/software/jvarkit/dist/
