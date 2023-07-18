@@ -101,10 +101,8 @@ GATK_HOME=~/software/gatk-4.2.3.0
 
 separate_var:
 	echo "keep only snps"
-	java -jar ${GATK_HOME}/gatk-package-4.2.3.0-local.jar SelectVariants -R ${GENOME_FILE} -V  ${FREEBAYES_DIR}/merged_call/fixed.merged_filtered.vcf \
-  	--select-type-to-include SNP -O ${FREEBAYES_DIR}/merged_call/clean_SNPs.vcf.gz
+	java -jar ${GATK_HOME}/gatk-package-4.2.3.0-local.jar SelectVariants -R ${GENOME_FILE} -V  ${FREEBAYES_DIR}/merged_call/fixed.merged_filtered.vcf --select-type-to-include SNP -O ${FREEBAYES_DIR}/merged_call/clean_SNPs.vcf.gz
 	bcftools stats ${FREEBAYES_DIR}/merged_call/clean_SNPs.vcf.gz | head -30
 	echo "keep only indels"
-	java -jar ${GATK_HOME}/gatk-package-4.2.3.0-local.jar SelectVariants -R ${GENOME_FILE} \
-	-V  ${FREEBAYES_DIR}/merged_call/fixed.merged_filtered.vcf --select-type-to-include INDEL -O ${FREEBAYES_DIR}/merged_call/clean_Indels.vcf.gz
+	java -jar ${GATK_HOME}/gatk-package-4.2.3.0-local.jar SelectVariants -R ${GENOME_FILE} -V  ${FREEBAYES_DIR}/merged_call/fixed.merged_filtered.vcf --select-type-to-include INDEL -O ${FREEBAYES_DIR}/merged_call/clean_Indels.vcf.gz
 	bcftools stats ${FREEBAYES_DIR}/merged_call/clean_Indels.vcf.gz | head -30
