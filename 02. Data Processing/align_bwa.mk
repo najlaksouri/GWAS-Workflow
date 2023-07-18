@@ -118,7 +118,7 @@ $(samples):
 	samtools view -@4 -S -b ${MAPPING_HOME}/sample_$@.sam > ${BAM_HOME}/sample_$@.bam
 
 
-# B- fixmate and sort by name
+# B-  sort by name and fixmate
 
 fixmate:
 	mkdir -p ${SRT_BY_NAME}
