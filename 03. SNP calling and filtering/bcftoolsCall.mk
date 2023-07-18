@@ -41,17 +41,17 @@ index:
 
 
 #################################################################################
-#				          reminder bcftools, call 								                      #
-#																				                                        #
-# mpileup command generate a bcf file containing the gentoype likelihood,		    #
-# (count the read coverage and convert the bam to genomic positions)  			    #	
-# 																				                                      #
+#				          reminder bcftools, call		#
+#					                                        #
+# mpileup command generate a bcf file containing the gentoype likelihood,	#
+# (count the read coverage and convert the bam to genomic positions)  		#	
+# 					                                        #
 # -Ou: generate an uncompressed output file                                     #
-# -f refers to the reference													                          #
+# -f refers to the reference							#
 # -m: Alternative model for multiallelic and rare-variant calling designed to 	#
-#  overcome known limitations in -c calling (the previous version)				      #
-# -v flag: output potential variant sites only									                #
-# -O z: Output type. “z” means the VCF file is compressed.						          #
+#  overcome known limitations in -c calling (the previous version)		#
+# -v flag: output potential variant sites only					#
+# -O z: Output type. “z” means the VCF file is compressed.			#
 #################################################################################
 
 
@@ -77,10 +77,10 @@ $(samples):
 
 
 #################################################################################
-#				              reminder bcftools, filter						                  		#
-#																				                                        #
+#			 reminder bcftools, filter				#
+#										#
 # we are goint to filter based on Quality(QUAL), raw read depth (DP) and        #
-# average quality mapping (MQ)  								                                #
+# average quality mapping (MQ)  						#
 #                                                                               #
 #################################################################################
 
