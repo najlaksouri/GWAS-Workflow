@@ -28,15 +28,15 @@ Underneath this README, we illustrate the different steps needed to run the anal
 Step 1. [ddRAD-Sequencing](https://github.com/najlaksouri/GWAS-Workflow/tree/main/01.ddRAD-sequencing) 
 
 Step 2. [Data processing](https://github.com/najlaksouri/GWAS-Workflow/tree/main/02.%20Data%20Processing) 
-- De-multiplexing: ------------------------> [stacks.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/Stacks.sh)
-- QC filtering: ------------------------> [Trimmomatic.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/trimmomatic.sh)
+- De-multiplexing: ------------------------> [stacks.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/stacks.sh)
+- QC filtering: ------------------------> [trimmomatic.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/trimmomatic.sh)
 - Remove duplicated reads ------------------------> [dedup.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/dedup.sh)
 - Reads mapping: ------------------------> [align_bwa.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/align_bwa.mk) 
     
 Step 3. [Variant calling and filtering](https://github.com/najlaksouri/GWAS-Workflow/tree/main/03.%20SNP%20calling%20and%20filtering) 
 - BCFtools calling: ------------------------> [bcftoolsCall.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/bcftoolsCall.mk)
-- GATK calling: ------------------------> [freebayes.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/gatkCall.mk)
-- Freebayes calling: ------------------------> [gatkCall.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/freebayes.mk)
+- GATK calling: ------------------------> [freebayesCall.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/freebayesCall.mk)
+- Freebayes calling: ------------------------> [gatkCall.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/gatkCall.mk)
 - Intersection
 - Imputation 
     
