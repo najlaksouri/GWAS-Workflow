@@ -40,7 +40,7 @@ Step 3. [Variant calling and filtering](https://github.com/najlaksouri/GWAS-Work
 - MAF filtering anf imputation: ------------------------>  [maf_imputation.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/maf_imputation.mk)
     
 Step 4. GWAS analysis
-   - Phenotypic data assessement [pp](https://najlaksouri.github.io/GWAS-Workflow/04.GWAS-analysis/Heritability.html)
+   - Phenotypic data assessement [pp](https://najlaksouri.github.io/GWAS-Workflow/04.\GWAS\analysis/Heritability.html)
    - Population Structure
    - Relatedness
    - Statistical model assessment
