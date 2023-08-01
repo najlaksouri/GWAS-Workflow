@@ -10,6 +10,8 @@ Underneath this README, we illustrate the different steps needed to run the anal
 <p align="center">
   <img width="500" height="500" src="https://github.com/najlaksouri/GWAS-Workflow/blob/main/Images/Pipeline.png">
 </p>
+![**Legend.** Summary](./04. \GWAS \analysis/Pipeline.jpg)
+
 
 ## Prerequisites
 - [Stacks](https://catchenlab.life.illinois.edu/stacks/)
