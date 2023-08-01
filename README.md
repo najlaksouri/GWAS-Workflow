@@ -8,11 +8,9 @@ Underneath this README, we illustrate the different steps needed to run the anal
 <br />
 
 <p align="center">
-  <img width="500" height="500" src="https://github.com/najlaksouri/GWAS-Workflow/blob/main/Images/Pipeline.png">
+  <img width="500" height="500" src="./04.%20GWAS%20analysis/Pipeline.png">
   
 </p>
-
-![**Legend.** Summary](./04.%20GWAS%20analysis/Pipeline.png)
 
 
 ## Prerequisites
