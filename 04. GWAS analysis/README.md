@@ -22,6 +22,13 @@ In this study, we used a discovery panel of 90 peach accessions in order to diss
 Only traits with **H<sup>2</sup>  > 0.5** were considered for association analysis. Consequently, contents of glucose, fructose, sucrose and total sugars were discarded from the subsequent analysis.
 
 
+<p align="center">
+  <img  src="https://github.com/najlaksouri/GWAS-Workflow/blob/main/04.%20GWAS%20analysis/Figure1_600.jpg">
+  
+</p>
+
+
+
 ## Marker-trait associations 
 For association mapping, seven statistical models, ranging from single to multi-locus, were simultaneously tested in GAPIT v3.1.065:
 - General linear model (GLM)
