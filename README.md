@@ -27,21 +27,21 @@ Underneath this README, we illustrate the different steps needed to run the anal
   - CMplot
 
 ## Content
-Step 1. [ddRAD-Sequencing](https://github.com/najlaksouri/GWAS-Workflow/tree/main/01.ddRAD-sequencing) 
+**Step 1**. [ddRAD-Sequencing](https://github.com/najlaksouri/GWAS-Workflow/tree/main/01.ddRAD-sequencing) 
 
-Step 2. [Data processing](https://github.com/najlaksouri/GWAS-Workflow/tree/main/02.%20Data%20Processing) 
+**Step 2**. [Data processing](https://github.com/najlaksouri/GWAS-Workflow/tree/main/02.%20Data%20Processing) 
 - De-multiplexing: ------------------------> [stacks.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/stacks.sh)
 - QC filtering: ------------------------> [trimmomatic.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/trimmomatic.sh)
 - Remove duplicated reads ------------------------> [dedup.sh](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/dedup.sh)
 - Reads mapping: ------------------------> [align_bwa.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/02.%20Data%20Processing/align_bwa.mk) 
     
-Step 3. [Variant calling and filtering](https://github.com/najlaksouri/GWAS-Workflow/tree/main/03.%20SNP%20calling%20and%20filtering) 
+**Step 3**. [Variant calling and filtering](https://github.com/najlaksouri/GWAS-Workflow/tree/main/03.%20SNP%20calling%20and%20filtering) 
 - BCFtools calling: ------------------------> [bcftoolsCall.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/bcftoolsCall.mk)
 - Freebayes calling: ------------------------> [freebayesCall.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/freebayes.mk)
 - GATK calling: ------------------------> [gatkCall.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/gatkCall.mk)
 - MAF filtering anf imputation: ------------------------>  [maf_imputation.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/maf_imputation.mk)
     
-Step 4. GWAS analysis
+**Step 4**. [GWAS analysis](https://github.com/najlaksouri/GWAS-Workflow/tree/main/04.%20GWAS%20analysis)
    - Phenotypic data assessement [Heritability](https://najlaksouri.github.io/GWAS-Workflow/04.%20GWAS%20analysis/Heritability.html)
    - Population Structure
    - Relatedness
