@@ -25,6 +25,7 @@ Underneath this README, we illustrate the different steps needed to run the anal
   - ggplot
   - GAPIT
   - CMplot
+  - SmartPCA
 
 ## Content
 **Step 1**. [ddRAD-Sequencing](https://github.com/najlaksouri/GWAS-Workflow/tree/main/01.ddRAD-sequencing) 
