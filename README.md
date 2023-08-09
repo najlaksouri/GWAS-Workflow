@@ -42,7 +42,7 @@ Underneath this README, we illustrate the different steps needed to run the anal
 - MAF filtering anf imputation: ------------------------>  [maf_imputation.mk](https://github.com/najlaksouri/GWAS-Workflow/blob/main/03.%20SNP%20calling%20and%20filtering/maf_imputation.mk)
     
 **Step 4**. [GWAS analysis](https://github.com/najlaksouri/GWAS-Workflow/tree/main/04.%20GWAS%20analysis)
-   - Phenotypic data assessement [trait transformations](https://github.com/najlaksouri/GWAS-Workflow/blob/main/04.%20GWAS%20analysis/phenotypic-assessment.html)
+   - Phenotypic data assessement ------------------------> [trait transformations](https://github.com/najlaksouri/GWAS-Workflow/blob/main/04.%20GWAS%20analysis/phenotypic-assessment.html)
    - PCA analysis
    - Relatedness
    - Statistical model assessment
