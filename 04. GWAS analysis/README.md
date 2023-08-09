@@ -7,7 +7,7 @@ In this study, we used a discovery panel of 90 peach accessions in order to diss
  <tr>
     <td> Harvest date (HvD; Julian days) </td>
     <td> Fruit weight (FW; grams) </td>
-    <td> Flesh firmness (FW; grams) </td>
+    <td> Flesh firmness (FF; newton) </td>
     <td> soluble solids content (SSC; °Brix) </td>
     <tr>
     <td> Titratable acidity (TA; grams malic acid/100 g flesh weight) </td>
@@ -15,7 +15,7 @@ In this study, we used a discovery panel of 90 peach accessions in order to diss
     <td>  Vitamin C (Vit C; mg of ascorbic acid/100 g flesh weight) </td>
     <td>  Total phenolics (Phen; mg of gallic acid equivalents/100 g flesh weight) </td>
     <tr>
-    <td>  Contents of flavonoid (Flv; catechin equivalents/100 g flesh weight) </td>
+    <td>  Contents of flavonoid (Flvs; catechin equivalents/100 g flesh weight) </td>
     <td>  Anthocyanin (ACNs; cyanidin-3-glucoside/kg flesh weight) </td>
     <td>  Sucrose (Suc; g/kg flesh weight) </td>
     <td>  Glucose (Glu; g/kg flesh weight) </td>
