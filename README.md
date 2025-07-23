@@ -1,7 +1,7 @@
 ## GWAS-Workflow
 
 Performing a Genome-Wide Association Studies (GWAS) can be a laborious task.
-In this reporsitory, we describe the pipeline that we have adapted to carry on a GWAS analysis using **ddRAD-seq-derived SNPs**.
+In this repository, we describe the pipeline that we have adapted to carry on a GWAS analysis using **ddRAD-seq-derived SNPs**.
 Underneath this README, we illustrate the different steps needed to run the analysis and we provide the codes necessary to reproduce this work.
 
 
@@ -51,5 +51,6 @@ Underneath this README, we illustrate the different steps needed to run the anal
 
 ## Reference
 
+Ksouri, N., Sánchez, G., Font i Forcada, C. et al. A reproducible ddRAD-seq protocol reveals novel genomic association signatures for fruit-related traits in peach. Plant Methods 21, 101 (2025). https://doi.org/10.1186/s13007-025-01415-3
 
 ## That's it.... Good luck!
